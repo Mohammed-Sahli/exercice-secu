@@ -7,9 +7,7 @@
     "start": "npx tsc && node dist/index.js",
     "dev": "nodemon src/index.ts --legacy-watch",
     "build": "tsc",
-    "dockerStart": "docker-compose up --build",
-    "debug": "npx nodemon --legacy-watch --ext ts src --exec 'node --inspect=0.0.0.0:9229 -r ts-node/register --nolazy' src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest --config src/jest.config.ts"
   },
   "author": "Mohammed SAHLI",
   "license": "ISC",
